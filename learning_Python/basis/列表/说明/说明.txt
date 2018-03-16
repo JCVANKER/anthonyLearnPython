@@ -1,0 +1,17 @@
+#单行注释
+'''
+多行注释
+'''
+"""
+多行注释
+"""
+bicycles=['trek','cannondale','redline','specialized']
+
+#直接访问列表包括括号
+print(bicycles)
+
+#访问列表元素，并首字母大写
+print(bicycles[0].title())
+
+#索引负数对应列表元素倒数，如-1表示列表最后一个元素的索引
+print(bicycles[-1])

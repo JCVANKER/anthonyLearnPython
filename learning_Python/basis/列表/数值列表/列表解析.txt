@@ -1,0 +1,7 @@
+#列表解析
+squares=[value**2 for value in range(1,11)]
+print(squares)
+	1.指定列表名：squares
+	2.左括号【
+	3.定义一个表达式，生成存储与列表中的值：value**2
+	4.编写for循环，给表达式赋值：for value in range[1,11]

@@ -1,0 +1,17 @@
+from restaurant import Restaurant
+
+print("创建三个实例-----")
+my_restaurant = Restaurant('中餐厅','中餐')
+my_restaurant.describe_restaurant()
+print()
+my_restaurant.open_restaurant(True)
+print("---------------------------------------------")
+my_restaurant2 = Restaurant('西餐厅','西餐')
+my_restaurant2.describe_restaurant()
+print()
+my_restaurant2.open_restaurant(True)
+print("---------------------------------------------")
+my_restaurant3 = Restaurant('快餐厅','快餐')
+my_restaurant3.describe_restaurant()
+print()
+my_restaurant3.open_restaurant(False)

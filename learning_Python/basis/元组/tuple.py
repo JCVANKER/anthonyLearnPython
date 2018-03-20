@@ -12,6 +12,6 @@ print("-------------------------")
 for dimension in dimensions:
 	print(dimension)
 print("-------------------------")
-#可修改指向元组的元组变量
+#由于tuple是不可变类型，改变元组变量，重新分配内存空间，变量指向该新的地址
 dimensions=(250,50)
 print(dimensions)

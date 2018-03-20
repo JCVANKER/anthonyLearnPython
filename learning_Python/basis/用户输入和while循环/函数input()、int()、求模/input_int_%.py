@@ -1,4 +1,4 @@
-#函数inout()接受一个参数：即要向用户显示的提示或说明；返回用户输入的字符串
+#函数input()接受一个参数：即要向用户显示的提示或说明；返回用户输入的字符串
 message=input("Tell me somethin, and I will repeat it bank to you:")
 print("Hello "+message+"!")
 print("--------------------------------------------------------------")

@@ -49,5 +49,7 @@ print("--------------------------------")
 	如果不给出initializer, 则第一次调用传递iterable的两个元素, 以后把前一次调用的
 	结果和iterable的下一个元素传递给function. 如果给出initializer, 则第一次传递
 	initializer和iterable的第一个元素给function.
+	
+	返回一个数值或者string类型等，非iterable（可迭代对象），不可用list()
 """
 print(reduce(lambda x, y: x+y, [1,2,3,4,5]))

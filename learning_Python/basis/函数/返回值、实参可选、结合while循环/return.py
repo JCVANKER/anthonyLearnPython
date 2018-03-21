@@ -7,7 +7,7 @@ musician=get_formatted_name('jimi','hendrix')
 print(musician) 
 print("----------------------------------------")
 
-#让实参变成可选，将形参默认值设置成空字符串（无论实参是否为其他类型），并将其置于末尾
+#让实参变成可选，将形参默认值设置成空字符串或None（无论实参是否为其他类型），并将其置于末尾
 def get_formatted_name(first_name,last_name,middle_name=''):
 	'''返回整洁的姓名'''
 	if middle_name:

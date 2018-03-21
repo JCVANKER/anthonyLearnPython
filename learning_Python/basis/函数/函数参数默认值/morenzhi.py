@@ -1,7 +1,7 @@
 def f(a,L=[]):
 	"""函数内部修改了默认参数属性__defaults__，导致逻辑错误"""
 	print(f.__defaults__[0])
-	# L是对f.__defaults__[0]的引用
+	# L是defaults__[0]的引用
 	L.append(a)
 	return L
    
@@ -22,6 +22,7 @@ def f1(a,L=None):
 print(f1(1))
 print(f1(2))
 print(f1(3))
+
 """
 	如果在调用一个函数时，没有给默认参数传递值，则函数内的默认参数是对函数的默认参数
 	属性__defaults__的引用；

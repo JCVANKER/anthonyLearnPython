@@ -24,3 +24,5 @@ def make_pizza(size,*toppings):
 make_pizza(16,'pepperoni')
 make_pizza(18,'mushroom','green peppers','extra cheese')
 print("----------------------------------------------")
+# *参数作为形参时：为函数创建空元组；作为实参时：元组或者列表的分拆
+# **参数作为形参时：为函数创建空字典；作为实参时：将字典按关键字参数形式分拆

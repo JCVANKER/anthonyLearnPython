@@ -26,7 +26,6 @@ with open(filename) as file_object:
 print("-------------------------------------------")
 
 #3 创建一个包含文件各行内容的列表，并使用数据
-filename = 'pi_digits.txt'
 with open(filename) as file_object:
 	lines = file_object.readlines()#readlines()将内容的各行存储在列表中
 

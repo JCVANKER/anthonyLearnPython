@@ -6,4 +6,4 @@ try:
 except FileNotFoundError:
 	pass
 else:
-	print("I know your favorite number! it is " + str(favorite_number))
+	print("I know your favorite number is " + str(favorite_number))

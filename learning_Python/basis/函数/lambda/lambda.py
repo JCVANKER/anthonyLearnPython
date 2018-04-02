@@ -9,6 +9,15 @@ f = lambda x: x+1
 print(f(1))
 print("--------------------------------")
 
+#lambda面试题
+li = [lambda : x for x in range(10)]
+#help(li) li是一个列表
+#help(li[0]) li中的元素是函数
+for i in range(10):
+	print(li[0]())
+#列表通过for共有10个元素，for每次返回从0-9，但lambda没有形参，调用函数时，返回全局的变量x
+print("--------------------------------")
+
 """
 	map() 会根据提供的函数对指定序列做映射。
 	第一个参数 function 以参数序列中的每一个元素调用 function 函数，返回包含每次 

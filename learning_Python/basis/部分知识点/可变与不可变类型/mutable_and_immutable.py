@@ -1,4 +1,4 @@
-#在Python中，strings、tuples、numbers是不可变对象，list、dict、set是可变对象
+#strings、tuples、numbers、frozenset是不可变对象，list、dict、set是可变对象
 """
 	不可变类型：变量赋值 a=5 后再赋值 a=10，这里实际是新生成一个 int 值对象 10，再
 	让 a 指向它，而 5 被丢弃，不是改变a的值，相当于新生成了a。

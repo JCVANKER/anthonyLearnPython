@@ -1,3 +1,4 @@
+#http://www.runoob.com/python3/python3-inputoutput.html
 """
 	从文件中读取数据
 		1. 读取整个文件
@@ -6,8 +7,8 @@
 """
 
 #1. 读取整个文件
-with open('pi_digits.txt') as file_object:
-	contents = file_object.read()
+with open('pi_digits.txt') as file_object:#默认为只读'r'
+	contents = file_object.read()# f.read(size) 从当前位置读取size个字符
 	print(contents.rstrip())
 	#read()到达文件末尾时返回一个空字符串，显示出来就是一个空行
 """
@@ -35,6 +36,13 @@ for line in lines:
 
 print(pi_string)
 print(len(pi_string))
+print("-------------------------------------------")
+# 读取单行
+with open(filename) as file_object:
+	line = file_object.readline()# readline(size)读取若干行，size代表读入的最长字符数
+	line1 = file_object.readline()# 并且会迭代
+print(line.rstrip())
+print(line1.rstrip())
 print("-------------------------------------------")
 """
 	读取文本文件时，Python将其中的所有文本都解读为字符串。若要成数值，则使用函数int()

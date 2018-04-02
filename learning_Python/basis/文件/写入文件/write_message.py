@@ -6,6 +6,7 @@
 	
 	写入模式('w')：如果指定的文件已经存在，Python将在返回文件对象前清空文件。
 	附加模式('a')：Python不会再返回文件对象前清空文件，写入的行附加在文件末尾
+	
 """
 filename = 'programming.txt'
 
@@ -25,3 +26,8 @@ with open('programming2.txt','w') as file_object:
 #附加模式('a')
 with open('programming1.txt','a') as file_object:
 	file_object.write("I also love finding meaningin large datasets.\n")
+
+#f.write(string) 将 string 写入到文件中, 然后返回写入的字符数。
+with open('programming3.txt','w') as file_object:
+	num = file_object.write("我写了多少个字符？")
+print(num)

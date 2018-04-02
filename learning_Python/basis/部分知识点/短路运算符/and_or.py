@@ -15,7 +15,6 @@
 """
 a = 0
 b = 2
-c = 1
 c1 = a and b
 c2 = a or b
 print(c1)#短路b，输出0

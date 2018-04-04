@@ -1,16 +1,16 @@
 """
 	https://blog.csdn.net/liang19890820/article/details/72654921
 	集合分为两类：
-		set: 可变集合  —— 可变的，也可以说是unhashable(不可哈希)的
+		set: 可变集合  —— 可变的(元素不可变)，也可以说是unhashable(不可哈希)的
 		frozenset: 不可变集合  —— 不可变的，也可以说是hashable（可哈希）的
 """
 
 """
-	集合(set)是一个无序不重复元素的序列；
+	集合(set)是一个无序且不重复的元素集合；
 	基本功能是进行成员关系测试和删除重复元素；
 	创建set：
 		1. {value，value}
-		2. 构造函数set()，参数为序列:string, list, tuple, set, 可迭代对象如range()
+		2. 构造函数set()，参数为序列:string, list, tuple或set, 可迭代对象如range()
 	创建空集合必须用set()而不是用{}，因为{}是用来创建空字典的
 """
 
@@ -60,7 +60,7 @@ print("-----------------------------")
 s = {'p','y'}
 s.add('t')#add()添加单个元素
 print(s)
-#update()添加多个元素，update() 可以使用元组、列表、字符串或其他集合作为参数。
+#update()添加多个元素，update() , 参数同构造函数set()的参数。
 s.update(['h','o','n'])
 print(s)
 
@@ -99,8 +99,8 @@ print(list_numbers)
 
 print("-----------------------------")
 
-#集合推导式1
-set_1 = set("asdasdasdadzvxzv")#参数为序列:string, list, tuple, set, 可迭代对象如：range()
+#集合推导式
+set_1 = set("asdasdasdadzvxzv")
 a = {x for x in set_1 if x not in 'abc'}
 print(a)
 

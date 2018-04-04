@@ -14,7 +14,7 @@ print("---------------------------")
 #如果没有指定第一个索引，列表将从头开始
 print(players[:3])
 print("---------------------------")
-#如果没有指定末尾索引，切片终止于列表末尾lan(list)，包括末尾索引元素，
+#如果没有指定末尾索引，切片终止于列表长度lan(list)，包括末尾索引元素，
 print(players[2:])
 print("---------------------------")
 #负数索引返回离列表末尾相应距离的元素,-1为最后一个索引
@@ -43,7 +43,7 @@ print(b)
 '''	
 	复制列表:
 		一定要用切片：  repeat_list=list[:]	
-		不能这样：	repeat_list=list	此时repeat_list和list指向同一个列表
+		不能这样：	repeat_list=list	此时repeat_list和list引用同一个列表
 '''
 repeat_players=players[:]
 print(repeat_players)

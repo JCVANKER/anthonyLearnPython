@@ -16,12 +16,12 @@ with open(filename,'w+') as fobj:
 #要使用seek()——whence参数的1，2，需将文件的读写模式换成rb或者rb+
 with open(filename,'rb+') as fobj:
 	fobj.seek(3,0)
-	print(fobj.tell())#指针的位置是该字符的前一位
+	print(fobj.tell())#指针的位置可以理解为该字符的索引
 	print(fobj.read(1))#字符'4'是pi的第4位字符，但是它的指针位置是第3位
-	fobj.seek(4,1)
+	fobj.seek(0,1)#0代表自身的指针，即指向下一位
 	print(fobj.tell())
 	print(fobj.read(1))
-	fobj.seek(-3,2)#最后一位是空字符，从后往前移动3位其中包含了最有以为空字符
+	fobj.seek(-3,2)
 	print(fobj.tell())
 	print(fobj.read(2))#f.read(size),size为输出多少位字符
 

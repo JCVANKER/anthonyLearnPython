@@ -7,7 +7,7 @@ print(a)
 
 #list1.extend(list2)扩充列表
 b = [8,9,10]
-a.extend(b)#扩充列表
+a.extend(b)#扩充列表，效率更高
 #等同于：a[len(a):] = b
 print(a)
 

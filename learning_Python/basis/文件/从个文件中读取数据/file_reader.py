@@ -28,7 +28,9 @@ print("-------------------------------------------")
 
 #3 创建一个包含文件各行内容的列表，并使用数据
 with open(filename) as file_object:
-	lines = file_object.readlines()#readlines()将内容的各行存储在列表中
+	lines = file_object.readlines()
+#readlines(sizeint)将内容的各行存储在列表中,若给定sizeint>0，返回总和大约
+#为sizeint字节的行, 实际读取值可能比 sizeint 较大, 因为需要填充缓冲区。
 
 pi_string = ''	
 for line in lines:

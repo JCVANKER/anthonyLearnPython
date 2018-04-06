@@ -31,3 +31,9 @@ with open('programming1.txt','a') as file_object:
 with open('programming3.txt','w') as file_object:
 	num = file_object.write("我写了多少个字符？")
 print(num)
+
+#f.writelines(sequence),向文件中写入一序列的字符串,换行需写入\n
+fobj = open("programming4.txt",'w')
+fobj.writelines(["这是第一行\n","这是第二行\n",'这是第三行'])
+fobj.close()
+

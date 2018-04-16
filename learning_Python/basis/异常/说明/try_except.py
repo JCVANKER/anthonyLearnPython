@@ -1,6 +1,6 @@
 #http://www.runoob.com/python3/python3-errors-execptions.html
 """
-	try语句按照如下方式工作；
+	try语句按照如下方式工作:
 
 	1	执行关键字try里面的子句。
 	2.1	若没有异常发生，忽略except子句，try子句执行后结束。

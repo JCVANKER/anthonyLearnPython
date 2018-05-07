@@ -1,3 +1,5 @@
+#http://www.runoob.com/python3/python3-class.html
+
 #根据约定，类的名称首字母大写
 class Dog():
 	"""一次模拟小狗的简单尝试"""

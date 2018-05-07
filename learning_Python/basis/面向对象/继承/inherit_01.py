@@ -36,6 +36,10 @@ class Car():
 		print("The car need a gas tank!")
 
 #创建子类
+"""
+	python支持多继承，若是基类中有相同的方法名，而在子类使用时未指定，python从左至右
+	搜索 即方法在子类中未找到时，从左到右查找基类中是否包含方法。
+"""
 class ElectricCar(Car):#类的参数括号内为父类
 	"""电动汽车的独特之处"""
 	
